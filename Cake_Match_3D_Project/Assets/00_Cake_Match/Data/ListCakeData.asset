@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e235b96bfac135c498824d753b6dc3d4, type: 3}
+  m_Name: ListCakeData
+  m_EditorClassIdentifier: 
+  L_TypeCake:
+  - _TypeCake: 0
+    _Mesh: {fileID: 4300000, guid: bcf8cb521ede89047bd22b06967c5cd4, type: 3}
+    _Material: {fileID: 2100000, guid: 11ecdc268b851ce44827fd07cea880a8, type: 2}
+    PointLevel: 1
+  - _TypeCake: 1
+    _Mesh: {fileID: 4300000, guid: bcf8cb521ede89047bd22b06967c5cd4, type: 3}
+    _Material: {fileID: 2100000, guid: 269fc20967117644aa33a1866b1bd55e, type: 2}
+    PointLevel: 2
+  - _TypeCake: 2
+    _Mesh: {fileID: 4300000, guid: bcf8cb521ede89047bd22b06967c5cd4, type: 3}
+    _Material: {fileID: 2100000, guid: 0fb49f6e607ef8b408af4ac605683f5f, type: 2}
+    PointLevel: 3
+  - _TypeCake: 3
+    _Mesh: {fileID: 4300000, guid: e261dafcf1ed2f240b6d67bb7edd437e, type: 3}
+    _Material: {fileID: 2100000, guid: a5d947ad3d911a44ebe11bb7013a74f1, type: 2}
+    PointLevel: 4
+  - _TypeCake: 4
+    _Mesh: {fileID: 4300000, guid: e261dafcf1ed2f240b6d67bb7edd437e, type: 3}
+    _Material: {fileID: 2100000, guid: a5d947ad3d911a44ebe11bb7013a74f1, type: 2}
+    PointLevel: 5
+  - _TypeCake: 5
+    _Mesh: {fileID: 4300000, guid: e261dafcf1ed2f240b6d67bb7edd437e, type: 3}
+    _Material: {fileID: 2100000, guid: a5d947ad3d911a44ebe11bb7013a74f1, type: 2}
+    PointLevel: 6
+  - _TypeCake: 6
+    _Mesh: {fileID: 4300000, guid: c3bc553e8f1b5d046b198b8ecffe42a6, type: 3}
+    _Material: {fileID: 2100000, guid: db85253cd6fe9674a885e58923e93bb3, type: 2}
+    PointLevel: 0
