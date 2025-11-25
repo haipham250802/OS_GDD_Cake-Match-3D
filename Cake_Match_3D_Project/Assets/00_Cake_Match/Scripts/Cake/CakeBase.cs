@@ -42,8 +42,26 @@ public class CakeBase : MonoBehaviour
             _meshFiter.mesh = cake._Mesh;
             _meshRenderer.sharedMaterial = cake._Material;
             Point_txt.text = cake.PointLevel.ToString();
-            transform.localScale = Vector3.one * 0.1f;
+            transform.localScale = new Vector3(0.0344f, 0.52f, 0.104f);
             transform.localRotation = Quaternion.Euler(new Vector3(90, -90, 90));
+        }
+    }
+
+    public void initDataCakeMerge()
+    {
+        if (!_meshFiter) _meshFiter = GetComponent<MeshFilter>();
+        if (!_meshRenderer) _meshRenderer = GetComponent<MeshRenderer>();
+
+        CAKE cake = GameManager.instance.DataManager.DataCake.getCakeByType(e_typeCake);
+
+        if (cake != null)
+        {
+            e_typeCake = cake._TypeCake;
+            _meshFiter.mesh = cake._Mesh;
+            _meshRenderer.sharedMaterial = cake._Material;
+            Point_txt.text = cake.PointLevel.ToString();
+            transform.localScale = new Vector3(0.2f, 0.65f, 0.2f);
+            transform.localRotation = Quaternion.Euler(new Vector3(90, 0, 180));
         }
     }
 
@@ -51,7 +69,7 @@ public class CakeBase : MonoBehaviour
     {
         int next = (int)e_typeCake + 1;
         e_typeCake = (E_TypeCake)next;
-        initDataCake();
+        initDataCakeMerge();
 
         CheckCakeCanMerge();
     }
@@ -110,6 +128,16 @@ public class CakeBase : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void InitStartTray()
+    {
+        transform.localScale = new Vector3(0.043f, 0.65f, 0.13f);
+    }
+
+    public void RestartInTray()
+    {
+        transform.localScale = new Vector3(0.0344f, 0.52f, 0.104f);
     }
 
     public bool isCakeCanMergeIncrease()

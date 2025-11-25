@@ -36,7 +36,7 @@ public class Cell : MonoBehaviour
         _isHaveCake = true;
         _currentCakeInCell = cake;
         cake.transform.parent = transform;
-        cake.transform.localPosition = new Vector3(0, 0, -1.15f);
+        cake.transform.localPosition = new Vector3(0, 0, -0.55f);
     }
 
     public void EnterCell()

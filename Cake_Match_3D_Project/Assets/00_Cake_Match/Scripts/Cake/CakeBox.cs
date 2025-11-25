@@ -195,12 +195,30 @@ public class CakeBox : MonoBehaviour
             l_cakesInBox[i].ReStartPoint();
         }
 
+        CakeReStartTray();
         transform.localPosition = new Vector3(0, 0, -2.5f);
     }
 
     private void StartInTray()
     {
+        CakeStartTray();
         transform.localPosition = new Vector3(0, 0, -0.2f);
+    }
+
+    private void CakeStartTray()
+    {
+        foreach (var item in l_cakesInBox)
+        {
+            item.InitStartTray();
+        }
+    }
+
+    private void CakeReStartTray()
+    {
+        foreach (var item in l_cakesInBox)
+        {
+            item.RestartInTray();
+        }
     }
 
     private void ProcessEmptyTray()
